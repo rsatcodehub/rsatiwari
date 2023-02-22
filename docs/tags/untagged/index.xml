@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>untagged on rsatiwari-tech notes</title>
+    <link>https://rsatcodehub.github.io/rsatiwari/tags/untagged/</link>
+    <description>Recent content in untagged on rsatiwari-tech notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 23 Feb 2023 07:00:21 +1100</lastBuildDate><atom:link href="https://rsatcodehub.github.io/rsatiwari/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Examplepost</title>
+      <link>https://rsatcodehub.github.io/rsatiwari/posts/examplepost/</link>
+      <pubDate>Thu, 23 Feb 2023 07:00:21 +1100</pubDate>
+      
+      <guid>https://rsatcodehub.github.io/rsatiwari/posts/examplepost/</guid>
+      <description>This is example post
+Lets add some tech commands here
+kubectl get nodes</description>
+    </item>
+    
+  </channel>
+</rss>
