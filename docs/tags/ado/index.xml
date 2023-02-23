@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ADO on rsatiwari-tech notes</title>
+    <link>https://rsatcodehub.github.io/rsatiwari/tags/ado/</link>
+    <description>Recent content in ADO on rsatiwari-tech notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 23 Feb 2023 02:26:31 +1100</lastBuildDate><atom:link href="https://rsatcodehub.github.io/rsatiwari/tags/ado/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure DevOps and IIS</title>
+      <link>https://rsatcodehub.github.io/rsatiwari/posts/ado-iis/</link>
+      <pubDate>Thu, 23 Feb 2023 02:26:31 +1100</pubDate>
+      
+      <guid>https://rsatcodehub.github.io/rsatiwari/posts/ado-iis/</guid>
+      <description>Scenario: You need to setup IIS on Windows Virtual machines using Azure DevOps. Also, the VMs are placed in a secure zone where files cannot be downloaded directly due to firewall restrictions. Hence, you cannot use the ADO default registration script to download the vsts agent and register it.
+Steps to configure it -
+Azure DevOps - Create a new Deployment Group eg. DG-External This is where the VMs will be registered.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -10,6 +10,20 @@
         <atom:link href="https://rsatcodehub.github.io/rsatiwari/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
+            <title>Azcmd1</title>
+            <link>https://rsatcodehub.github.io/rsatiwari/posts/azcmd1/</link>
+            <pubDate>Thu, 23 Feb 2023 07:26:31 +1100</pubDate>
+            
+            <guid>https://rsatcodehub.github.io/rsatiwari/posts/azcmd1/</guid>
+            <description>This is a test blog for checking tags
+To check the current context use the following az cli cmd az account set --subscription &amp;quot;name&amp;quot;</description>
+            <content type="html"><![CDATA[<p>This is a test blog for checking tags</p>
+<p>To check the current context use the following az cli cmd
+<code>az account set --subscription &quot;name&quot;</code></p>
+]]></content>
+        </item>
+        
+        <item>
             <title>Azcmds</title>
             <link>https://rsatcodehub.github.io/rsatiwari/posts/azcmds/</link>
             <pubDate>Thu, 23 Feb 2023 07:26:31 +1100</pubDate>
@@ -34,6 +48,39 @@ kubectl get nodes</description>
             <content type="html"><![CDATA[<p>This is example post</p>
 <p>Lets add some tech commands here</p>
 <p><code>kubectl get nodes</code></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Azure DevOps and IIS</title>
+            <link>https://rsatcodehub.github.io/rsatiwari/posts/ado-iis/</link>
+            <pubDate>Thu, 23 Feb 2023 02:26:31 +1100</pubDate>
+            
+            <guid>https://rsatcodehub.github.io/rsatiwari/posts/ado-iis/</guid>
+            <description>Scenario: You need to setup IIS on Windows Virtual machines using Azure DevOps. Also, the VMs are placed in a secure zone where files cannot be downloaded directly due to firewall restrictions. Hence, you cannot use the ADO default registration script to download the vsts agent and register it.
+Steps to configure it -
+Azure DevOps - Create a new Deployment Group eg. DG-External This is where the VMs will be registered.</description>
+            <content type="html"><![CDATA[<p>Scenario: You need to setup IIS on Windows Virtual machines using Azure DevOps. Also, the VMs are placed in a secure zone where files cannot be downloaded directly due to firewall restrictions. Hence, you cannot use the ADO default registration script to download the vsts agent and register it.</p>
+<p>Steps to configure it -</p>
+<ol>
+<li>Azure DevOps - Create a new Deployment Group eg. DG-External</li>
+</ol>
+<pre tabindex="0"><code>
+    <img src="../images/ADO-IIS-DeploymentGroup.PNG"  class="left"  />
+
+
+</code></pre><p>This is where the VMs will be registered.</p>
+<ol start="2">
+<li>Once the #1 is completed, you should see registration script something like below</li>
+</ol>
+<pre tabindex="0"><code>
+    <img src="../images/ADO-Registration-Script.PNG"  class="left"  />
+
+
+</code></pre><ol start="3">
+<li>Download the ADO/vsts agent for windows from the below location</li>
+</ol>
+<p><a href="https://github.com/microsoft/azure-pipelines-agent/releases">https://github.com/microsoft/azure-pipelines-agent/releases</a></p>
 ]]></content>
         </item>
         

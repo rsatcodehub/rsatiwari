@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>azcli on rsatiwari-tech notes</title>
+    <link>https://rsatcodehub.github.io/rsatiwari/tags/azcli/</link>
+    <description>Recent content in azcli on rsatiwari-tech notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 23 Feb 2023 07:26:31 +1100</lastBuildDate><atom:link href="https://rsatcodehub.github.io/rsatiwari/tags/azcli/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azcmd1</title>
+      <link>https://rsatcodehub.github.io/rsatiwari/posts/azcmd1/</link>
+      <pubDate>Thu, 23 Feb 2023 07:26:31 +1100</pubDate>
+      
+      <guid>https://rsatcodehub.github.io/rsatiwari/posts/azcmd1/</guid>
+      <description>This is a test blog for checking tags
+To check the current context use the following az cli cmd az account set --subscription &amp;quot;name&amp;quot;</description>
+    </item>
+    
+    <item>
+      <title>Azcmds</title>
+      <link>https://rsatcodehub.github.io/rsatiwari/posts/azcmds/</link>
+      <pubDate>Thu, 23 Feb 2023 07:26:31 +1100</pubDate>
+      
+      <guid>https://rsatcodehub.github.io/rsatiwari/posts/azcmds/</guid>
+      <description>This is a test for second blog post
+To check the current context use the following az cli cmd &amp;ndash;&amp;gt; az account show -o table</description>
+    </item>
+    
+  </channel>
+</rss>

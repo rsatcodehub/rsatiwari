@@ -5,7 +5,7 @@ draft: false
 toc: false
 images:
 tags:
-  - untagged
+  - azcli
 ---
 
 This is a test for second blog post
