@@ -52,15 +52,15 @@ kubectl get nodes</description>
         </item>
         
         <item>
-            <title>Azure DevOps and IIS</title>
+            <title>ADO Agent Installation for Windows VM in a secure environment</title>
             <link>https://rsatcodehub.github.io/rsatiwari/posts/ado-iis/</link>
             <pubDate>Thu, 23 Feb 2023 02:26:31 +1100</pubDate>
             
             <guid>https://rsatcodehub.github.io/rsatiwari/posts/ado-iis/</guid>
-            <description>Scenario: You need to setup IIS on Windows Virtual machines using Azure DevOps. Also, the VMs are placed in a secure zone where files cannot be downloaded directly due to firewall restrictions. Hence, you cannot use the ADO default registration script to download the vsts agent and register it.
+            <description>Scenario: You need to register a Windows Virtual machines as a deployment target in Azure DevOps Project. Also, the VMs are placed in a secure zone where files cannot be downloaded directly due to firewall restrictions. Hence, you cannot use the ADO default registration script to download the vsts agent and register it.
 Steps to configure it -
 Azure DevOps - Create a new Deployment Group eg. DG-External This is where the VMs will be registered.</description>
-            <content type="html"><![CDATA[<p>Scenario: You need to setup IIS on Windows Virtual machines using Azure DevOps. Also, the VMs are placed in a secure zone where files cannot be downloaded directly due to firewall restrictions. Hence, you cannot use the ADO default registration script to download the vsts agent and register it.</p>
+            <content type="html"><![CDATA[<p>Scenario: You need to register a Windows Virtual machines as a deployment target in Azure DevOps Project. Also, the VMs are placed in a secure zone where files cannot be downloaded directly due to firewall restrictions. Hence, you cannot use the ADO default registration script to download the vsts agent and register it.</p>
 <p>Steps to configure it -</p>
 <ol>
 <li>Azure DevOps - Create a new Deployment Group eg. DG-External</li>
@@ -77,10 +77,33 @@ Azure DevOps - Create a new Deployment Group eg. DG-External This is where the V
     <img src="../images/ADO-Registration-Script.PNG"  class="left"  />
 
 
-</code></pre><ol start="3">
-<li>Download the ADO/vsts agent for windows from the below location</li>
+</code></pre><p>Use the copy option and since we are going to download manually ADO agent file (refer to step3), we need to modify this script.</p>
+<p>Grab the last bit of the registration script, so it would be something like this</p>
+<p><code>.\config.cmd --deploymentgroup --deploymentgroupname &quot;DG-External&quot; --agent $env:COMPUTERNAME --runasservice --work '_work' --url 'https://companyname.visualstudio.com/' --projectname 'ADO Project Name' --auth PAT --token xxxxxxxxxxxxxxxxxx</code></p>
+<p>url &ndash;&gt; replace companyname with your relevent ADO</p>
+<p>The rest are self explanatory, when you generate the registration script, PAT token is automatically generated, which is typically valid less than a day.</p>
+<ol start="3">
+<li>Now, download the ADO/vsts agent for windows from the below location</li>
 </ol>
 <p><a href="https://github.com/microsoft/azure-pipelines-agent/releases">https://github.com/microsoft/azure-pipelines-agent/releases</a></p>
+<ol start="4">
+<li>You may not need it, but for my scenario these VMs were clone and had previous ADO agent installed.</li>
+</ol>
+<p>To remove/unregister ADO agent <code>.\config.cmd remove --unattended</code> remember to run this from the location where previous install of ADO agent is, eg. C:\adoagent\A1</p>
+<ol start="5">
+<li>Once you have populated all the fields in code in step 2, start powershell and run it</li>
+</ol>
+<pre tabindex="0"><code>
+    <img src="../images/registeradoclient01.PNG"  class="left"  />
+
+
+</code></pre><p>You can either use the default account or if you have a service account use it here</p>
+<pre tabindex="0"><code>
+    <img src="../images/registeradoclient02.PNG"  class="left"  />
+
+
+</code></pre><p>This should complete your registration steps.</p>
+<p>Validate it in Azure DevOps Project deployment group and add any tags against this, it could be useful in pipeline</p>
 ]]></content>
         </item>
         
