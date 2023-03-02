@@ -1,7 +1,7 @@
 ---
 title: "Azure DevOps and Configure IIS"
 date: 2023-03-01T07:00:21+11:00
-draft: false
+draft: true
 toc: false
 images:
 tags:
@@ -30,11 +30,6 @@ Steps to configure it -
 
 ``` 
 {{<image src="../images/ADO-IIS-DeploymentGroup.PNG">}}
-
-
-
-
-
 
 
 
