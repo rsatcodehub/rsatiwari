@@ -1,22 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ADO on rsatiwari-tech notes</title>
+    <title>ado on rsatiwari-tech notes</title>
     <link>https://rsatcodehub.github.io/rsatiwari/tags/ado/</link>
-    <description>Recent content in ADO on rsatiwari-tech notes</description>
+    <description>Recent content in ado on rsatiwari-tech notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 23 Feb 2023 02:26:31 +1100</lastBuildDate><atom:link href="https://rsatcodehub.github.io/rsatiwari/tags/ado/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Mar 2023 07:00:21 +1100</lastBuildDate><atom:link href="https://rsatcodehub.github.io/rsatiwari/tags/ado/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>ADO Agent Installation for Windows VM in a secure environment</title>
+      <title>Azure DevOps and Configure IIS</title>
       <link>https://rsatcodehub.github.io/rsatiwari/posts/ado-iis/</link>
-      <pubDate>Thu, 23 Feb 2023 02:26:31 +1100</pubDate>
+      <pubDate>Wed, 01 Mar 2023 07:00:21 +1100</pubDate>
       
       <guid>https://rsatcodehub.github.io/rsatiwari/posts/ado-iis/</guid>
       <description>Scenario: You need to register a Windows Virtual machines as a deployment target in Azure DevOps Project. Also, the VMs are placed in a secure zone where files cannot be downloaded directly due to firewall restrictions. Hence, you cannot use the ADO default registration script to download the vsts agent and register it.
 Steps to configure it -
+Azure DevOps - Create a new Deployment Group eg. DG-External You need to configure IIS using Azure DevOps In this blog I will use Classic UI version, next one I will cover yaml version Steps to configure it - 1.</description>
+    </item>
+    
+    <item>
+      <title>ADO Agent Installation for Windows VM in a secure environment</title>
+      <link>https://rsatcodehub.github.io/rsatiwari/posts/ado-windowsagent/</link>
+      <pubDate>Thu, 23 Feb 2023 02:26:31 +1100</pubDate>
+      
+      <guid>https://rsatcodehub.github.io/rsatiwari/posts/ado-windowsagent/</guid>
+      <description>Scenario: You need to register a Windows Virtual machines as a deployment target in Azure DevOps Project. Also, the VMs are placed in a secure zone where files cannot be downloaded directly due to firewall restrictions. Hence, you cannot use the ADO default registration script to download the vsts agent and register it.
+Steps to configure it -
 Azure DevOps - Create a new Deployment Group eg. DG-External This is where the VMs will be registered.</description>
+    </item>
+    
+    <item>
+      <title>ADO CLI and Variables List</title>
+      <link>https://rsatcodehub.github.io/rsatiwari/posts/ado-cli-exportvariables/</link>
+      <pubDate>Wed, 01 Feb 2023 07:26:31 +1100</pubDate>
+      
+      <guid>https://rsatcodehub.github.io/rsatiwari/posts/ado-cli-exportvariables/</guid>
+      <description>Scenario:
+I wanted to export a long list of variables defined in release pipeline in Azure DevOps. This was on classic GUI based pipeline. I wanted to understand the values it was populated. If you have similar challenge, the below solution may help you.
+One Possible Solution:
+I am sure there may be another way to work through this solution. The way I got the results was using the below steps -</description>
     </item>
     
   </channel>

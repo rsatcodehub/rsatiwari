@@ -19,13 +19,15 @@ To check the current context use the following az cli cmd az account set --subsc
     </item>
     
     <item>
-      <title>Azcmds</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/posts/azcmds/</link>
-      <pubDate>Thu, 23 Feb 2023 07:26:31 +1100</pubDate>
+      <title>ADO CLI and Variables List</title>
+      <link>https://rsatcodehub.github.io/rsatiwari/posts/ado-cli-exportvariables/</link>
+      <pubDate>Wed, 01 Feb 2023 07:26:31 +1100</pubDate>
       
-      <guid>https://rsatcodehub.github.io/rsatiwari/posts/azcmds/</guid>
-      <description>This is a test for second blog post
-To check the current context use the following az cli cmd &amp;ndash;&amp;gt; az account show -o table</description>
+      <guid>https://rsatcodehub.github.io/rsatiwari/posts/ado-cli-exportvariables/</guid>
+      <description>Scenario:
+I wanted to export a long list of variables defined in release pipeline in Azure DevOps. This was on classic GUI based pipeline. I wanted to understand the values it was populated. If you have similar challenge, the below solution may help you.
+One Possible Solution:
+I am sure there may be another way to work through this solution. The way I got the results was using the below steps -</description>
     </item>
     
   </channel>
