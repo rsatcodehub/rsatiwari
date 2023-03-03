@@ -18,20 +18,38 @@
     </item>
     
     <item>
-      <title>untagged</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/tags/untagged/</link>
-      <pubDate>Thu, 23 Feb 2023 07:00:21 +1100</pubDate>
-      
-      <guid>https://rsatcodehub.github.io/rsatiwari/tags/untagged/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>ado</title>
       <link>https://rsatcodehub.github.io/rsatiwari/tags/ado/</link>
       <pubDate>Thu, 23 Feb 2023 02:26:31 +1100</pubDate>
       
       <guid>https://rsatcodehub.github.io/rsatiwari/tags/ado/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>azure repos</title>
+      <link>https://rsatcodehub.github.io/rsatiwari/tags/azure-repos/</link>
+      <pubDate>Tue, 10 Jan 2023 07:00:21 +1100</pubDate>
+      
+      <guid>https://rsatcodehub.github.io/rsatiwari/tags/azure-repos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://rsatcodehub.github.io/rsatiwari/tags/github/</link>
+      <pubDate>Tue, 10 Jan 2023 07:00:21 +1100</pubDate>
+      
+      <guid>https://rsatcodehub.github.io/rsatiwari/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh keys</title>
+      <link>https://rsatcodehub.github.io/rsatiwari/tags/ssh-keys/</link>
+      <pubDate>Tue, 10 Jan 2023 07:00:21 +1100</pubDate>
+      
+      <guid>https://rsatcodehub.github.io/rsatiwari/tags/ssh-keys/</guid>
       <description></description>
     </item>
     

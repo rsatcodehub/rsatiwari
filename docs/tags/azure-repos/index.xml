@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>azure repos on rsatiwari-tech notes</title>
+    <link>https://rsatcodehub.github.io/rsatiwari/tags/azure-repos/</link>
+    <description>Recent content in azure repos on rsatiwari-tech notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 10 Jan 2023 07:00:21 +1100</lastBuildDate><atom:link href="https://rsatcodehub.github.io/rsatiwari/tags/azure-repos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github, Azure Repos and SSH Authentication</title>
+      <link>https://rsatcodehub.github.io/rsatiwari/posts/sourcecode-ssh/</link>
+      <pubDate>Tue, 10 Jan 2023 07:00:21 +1100</pubDate>
+      
+      <guid>https://rsatcodehub.github.io/rsatiwari/posts/sourcecode-ssh/</guid>
+      <description>I often need to setup ssh authentication to access repos (github/azure repos). This is a quick post to keep all that information handy.
+On your local machine (using bash prompt), run the below command to generate key. You can add a passphrase which improves or adds another layer of security. ssh-keygen -C &amp;quot;youremail@email.com&amp;quot;
+This should generate two files id_rsa and id_rsa.pub. Remember to keep id_rsa safe and dont accidentially copy this in source code or any publicly accessible endpoint.</description>
+    </item>
+    
+  </channel>
+</rss>

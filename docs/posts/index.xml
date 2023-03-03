@@ -24,21 +24,6 @@ To check the current context use the following az cli cmd az account set --subsc
         </item>
         
         <item>
-            <title>Examplepost</title>
-            <link>https://rsatcodehub.github.io/rsatiwari/posts/examplepost/</link>
-            <pubDate>Thu, 23 Feb 2023 07:00:21 +1100</pubDate>
-            
-            <guid>https://rsatcodehub.github.io/rsatiwari/posts/examplepost/</guid>
-            <description>This is example post
-Lets add some tech commands here
-kubectl get nodes</description>
-            <content type="html"><![CDATA[<p>This is example post</p>
-<p>Lets add some tech commands here</p>
-<p><code>kubectl get nodes</code></p>
-]]></content>
-        </item>
-        
-        <item>
             <title>ADO Agent Installation for Windows VM in a secure environment</title>
             <link>https://rsatcodehub.github.io/rsatiwari/posts/ado-windowsagent/</link>
             <pubDate>Thu, 23 Feb 2023 02:26:31 +1100</pubDate>
@@ -131,6 +116,46 @@ I am sure there may be another way to work through this solution. The way I got 
 <p><code>az pipelines release definition show --name &quot;Name of the pipeline&quot; --org https://dev.azure.com/typically-companyname/ --project &quot;ADO Project Name&quot; --output json &gt; pipelinenamevars.json</code></p>
 <p>Change pipelinenamevars.json to your desired name .json</p>
 ]]></content>
+        </item>
+        
+        <item>
+            <title>Github, Azure Repos and SSH Authentication</title>
+            <link>https://rsatcodehub.github.io/rsatiwari/posts/sourcecode-ssh/</link>
+            <pubDate>Tue, 10 Jan 2023 07:00:21 +1100</pubDate>
+            
+            <guid>https://rsatcodehub.github.io/rsatiwari/posts/sourcecode-ssh/</guid>
+            <description>I often need to setup ssh authentication to access repos (github/azure repos). This is a quick post to keep all that information handy.
+On your local machine (using bash prompt), run the below command to generate key. You can add a passphrase which improves or adds another layer of security. ssh-keygen -C &amp;quot;youremail@email.com&amp;quot;
+This should generate two files id_rsa and id_rsa.pub. Remember to keep id_rsa safe and dont accidentially copy this in source code or any publicly accessible endpoint.</description>
+            <content type="html"><![CDATA[<p>I often need to setup ssh authentication to access repos (github/azure repos). This is a quick post to keep all that information handy.</p>
+<ol>
+<li>On your local machine (using bash prompt), run the below command to generate key. You can add a passphrase which improves or adds another layer of security.</li>
+</ol>
+<p><code>ssh-keygen -C &quot;youremail@email.com&quot;</code></p>
+<p>This should generate two files id_rsa and id_rsa.pub. Remember to keep id_rsa safe and dont accidentially copy this in source code or any publicly accessible endpoint.</p>
+<ol start="2">
+<li>On Github or Azure DevOps Repo add the contents of id_rsa.pub</li>
+</ol>
+<p>Adding new SSH key in Azure DevOps -</p>
+
+    <img src="../images/ado-ssh01.PNG"  class="left"  />
+
+
+<p>Adding new SSH key in Github -</p>
+<pre tabindex="0"><code>
+    <img src="../images/github-ssh01.PNG"  class="left"  />
+
+
+</code></pre><p>Select New Key and add the contents of id_rsa.pub here.</p>
+<p>When you clone your repo, the first time it will ask for authentication and it is added to known_hosts file.</p>
+<ol start="3">
+<li>Before you run git clone (Azure repos in my case), change the default https to ssh.</li>
+</ol>
+<pre tabindex="0"><code>
+    <img src="../images/azurerepos-ssh-clone.PNG"  class="left"  />
+
+
+</code></pre>]]></content>
         </item>
         
     </channel>
