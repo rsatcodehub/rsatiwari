@@ -7,22 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 23 Feb 2023 07:26:31 +1100</lastBuildDate><atom:link href="https://rsatcodehub.github.io/rsatiwari/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>azcli</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/tags/azcli/</link>
-      <pubDate>Thu, 23 Feb 2023 07:26:31 +1100</pubDate>
-      
-      <guid>https://rsatcodehub.github.io/rsatiwari/tags/azcli/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Thu, 23 Feb 2023 02:26:31 +1100</lastBuildDate><atom:link href="https://rsatcodehub.github.io/rsatiwari/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ado</title>
       <link>https://rsatcodehub.github.io/rsatiwari/tags/ado/</link>
       <pubDate>Thu, 23 Feb 2023 02:26:31 +1100</pubDate>
       
       <guid>https://rsatcodehub.github.io/rsatiwari/tags/ado/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>office365</title>
+      <link>https://rsatcodehub.github.io/rsatiwari/tags/office365/</link>
+      <pubDate>Fri, 10 Feb 2023 07:26:31 +1100</pubDate>
+      
+      <guid>https://rsatcodehub.github.io/rsatiwari/tags/office365/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>powershell</title>
+      <link>https://rsatcodehub.github.io/rsatiwari/tags/powershell/</link>
+      <pubDate>Fri, 10 Feb 2023 07:26:31 +1100</pubDate>
+      
+      <guid>https://rsatcodehub.github.io/rsatiwari/tags/powershell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>azcli</title>
+      <link>https://rsatcodehub.github.io/rsatiwari/tags/azcli/</link>
+      <pubDate>Wed, 01 Feb 2023 07:26:31 +1100</pubDate>
+      
+      <guid>https://rsatcodehub.github.io/rsatiwari/tags/azcli/</guid>
       <description></description>
     </item>
     

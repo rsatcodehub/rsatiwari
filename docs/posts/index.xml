@@ -6,22 +6,8 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Thu, 23 Feb 2023 07:26:31 +1100</lastBuildDate>
+        <lastBuildDate>Thu, 23 Feb 2023 02:26:31 +1100</lastBuildDate>
         <atom:link href="https://rsatcodehub.github.io/rsatiwari/posts/index.xml" rel="self" type="application/rss+xml" />
-        
-        <item>
-            <title>Azcmd1</title>
-            <link>https://rsatcodehub.github.io/rsatiwari/posts/azcmd1/</link>
-            <pubDate>Thu, 23 Feb 2023 07:26:31 +1100</pubDate>
-            
-            <guid>https://rsatcodehub.github.io/rsatiwari/posts/azcmd1/</guid>
-            <description>This is a test blog for checking tags
-To check the current context use the following az cli cmd az account set --subscription &amp;quot;name&amp;quot;</description>
-            <content type="html"><![CDATA[<p>This is a test blog for checking tags</p>
-<p>To check the current context use the following az cli cmd
-<code>az account set --subscription &quot;name&quot;</code></p>
-]]></content>
-        </item>
         
         <item>
             <title>ADO Agent Installation for Windows VM in a secure environment</title>
@@ -76,6 +62,25 @@ Azure DevOps - Create a new Deployment Group eg. DG-External This is where the V
 
 </code></pre><p>This should complete your registration steps.</p>
 <p>Validate it in Azure DevOps Project deployment group and add any tags against this, it could be useful in pipeline</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Office365-Powershell</title>
+            <link>https://rsatcodehub.github.io/rsatiwari/posts/azcmd1/</link>
+            <pubDate>Fri, 10 Feb 2023 07:26:31 +1100</pubDate>
+            
+            <guid>https://rsatcodehub.github.io/rsatiwari/posts/azcmd1/</guid>
+            <description>Although, I dont work much on AAD or IDAM side, there are times when I quickly need to refer to some details in Office365. Mainly due to someone is after this info, side effects of having GOD mode access&amp;hellip;.
+End result I would like to run Get-MsolAccountSku i. Install MSOnline module on Windows Powershell, Install-Module MSOnline
+ii. Connecto MSolService Connect-MsolService this would prompt for username and password. So if you work in Azure PIM environment, elevate your access first before running this cmdlet.</description>
+            <content type="html"><![CDATA[<p>Although, I dont work much on AAD or IDAM side, there are times when I quickly need to refer to some details in Office365. Mainly due to someone is after this info, side effects of having GOD mode access&hellip;.</p>
+<ol>
+<li>End result I would like to run Get-MsolAccountSku</li>
+</ol>
+<p>i. Install MSOnline module on Windows Powershell, <code>Install-Module MSOnline</code></p>
+<p>ii. Connecto MSolService <code>Connect-MsolService</code> this would prompt for username and password. So if you work in Azure PIM environment, elevate your access first before running this cmdlet.</p>
+<p>iii. Now, <code>Get-MsolAccountSku</code> and similar cmdlets to get desired information</p>
 ]]></content>
         </item>
         

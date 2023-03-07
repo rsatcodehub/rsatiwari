@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>powershell on rsatiwari-tech notes</title>
+    <link>https://rsatcodehub.github.io/rsatiwari/tags/powershell/</link>
+    <description>Recent content in powershell on rsatiwari-tech notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 10 Feb 2023 07:26:31 +1100</lastBuildDate><atom:link href="https://rsatcodehub.github.io/rsatiwari/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Office365-Powershell</title>
+      <link>https://rsatcodehub.github.io/rsatiwari/posts/azcmd1/</link>
+      <pubDate>Fri, 10 Feb 2023 07:26:31 +1100</pubDate>
+      
+      <guid>https://rsatcodehub.github.io/rsatiwari/posts/azcmd1/</guid>
+      <description>Although, I dont work much on AAD or IDAM side, there are times when I quickly need to refer to some details in Office365. Mainly due to someone is after this info, side effects of having GOD mode access&amp;hellip;.
+End result I would like to run Get-MsolAccountSku i. Install MSOnline module on Windows Powershell, Install-Module MSOnline
+ii. Connecto MSolService Connect-MsolService this would prompt for username and password. So if you work in Azure PIM environment, elevate your access first before running this cmdlet.</description>
+    </item>
+    
+  </channel>
+</rss>

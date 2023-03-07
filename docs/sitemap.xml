@@ -2,28 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rsatcodehub.github.io/rsatiwari/tags/azcli/</loc>
-    <lastmod>2023-02-23T07:26:31+11:00</lastmod>
-  </url><url>
-    <loc>https://rsatcodehub.github.io/rsatiwari/posts/azcmd1/</loc>
-    <lastmod>2023-02-23T07:26:31+11:00</lastmod>
-  </url><url>
-    <loc>https://rsatcodehub.github.io/rsatiwari/posts/</loc>
-    <lastmod>2023-02-23T07:26:31+11:00</lastmod>
-  </url><url>
-    <loc>https://rsatcodehub.github.io/rsatiwari/</loc>
-    <lastmod>2023-02-23T07:26:31+11:00</lastmod>
-  </url><url>
-    <loc>https://rsatcodehub.github.io/rsatiwari/tags/</loc>
-    <lastmod>2023-02-23T07:26:31+11:00</lastmod>
-  </url><url>
     <loc>https://rsatcodehub.github.io/rsatiwari/tags/ado/</loc>
     <lastmod>2023-02-23T02:26:31+11:00</lastmod>
   </url><url>
     <loc>https://rsatcodehub.github.io/rsatiwari/posts/ado-windowsagent/</loc>
     <lastmod>2023-02-23T02:26:31+11:00</lastmod>
   </url><url>
+    <loc>https://rsatcodehub.github.io/rsatiwari/posts/</loc>
+    <lastmod>2023-02-23T02:26:31+11:00</lastmod>
+  </url><url>
+    <loc>https://rsatcodehub.github.io/rsatiwari/</loc>
+    <lastmod>2023-02-23T02:26:31+11:00</lastmod>
+  </url><url>
+    <loc>https://rsatcodehub.github.io/rsatiwari/tags/</loc>
+    <lastmod>2023-02-23T02:26:31+11:00</lastmod>
+  </url><url>
+    <loc>https://rsatcodehub.github.io/rsatiwari/tags/office365/</loc>
+    <lastmod>2023-02-10T07:26:31+11:00</lastmod>
+  </url><url>
+    <loc>https://rsatcodehub.github.io/rsatiwari/posts/azcmd1/</loc>
+    <lastmod>2023-02-10T07:26:31+11:00</lastmod>
+  </url><url>
+    <loc>https://rsatcodehub.github.io/rsatiwari/tags/powershell/</loc>
+    <lastmod>2023-02-10T07:26:31+11:00</lastmod>
+  </url><url>
     <loc>https://rsatcodehub.github.io/rsatiwari/posts/ado-cli-exportvariables/</loc>
+    <lastmod>2023-02-01T07:26:31+11:00</lastmod>
+  </url><url>
+    <loc>https://rsatcodehub.github.io/rsatiwari/tags/azcli/</loc>
     <lastmod>2023-02-01T07:26:31+11:00</lastmod>
   </url><url>
     <loc>https://rsatcodehub.github.io/rsatiwari/tags/azure-repos/</loc>

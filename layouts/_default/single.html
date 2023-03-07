@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="grid grid-cols-12 gap-4">
+  <div class="col-span-8">
+    {{ .Content }}
+  </div>
+  <div class="col-span-4">
+    {{ partial "partials/meta.html" . }}
+  </div>
+</div>
+{{ end }}
