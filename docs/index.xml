@@ -49,7 +49,7 @@ I am sure there may be another way to work through this solution. The way I got 
       
       <guid>https://rsatcodehub.github.io/rsatiwari/posts/sourcecode-ssh/</guid>
       <description>I often need to setup ssh authentication to access repos (github/azure repos). This is a quick post to keep all that information handy.
-On your local machine (using bash prompt), run the below command to generate key. You can add a passphrase which improves or adds another layer of security. ssh-keygen -C &amp;quot;youremail@email.com&amp;quot;
+On your local machine (using bash prompt), run the below command to generate key. You can add a passphrase which improves or adds another layer of security. ssh-keygen -t rsa -b 4096 -C &amp;quot;your_email@example.com&amp;quot;
 This should generate two files id_rsa and id_rsa.pub. Remember to keep id_rsa safe and dont accidentially copy this in source code or any publicly accessible endpoint.</description>
     </item>
     

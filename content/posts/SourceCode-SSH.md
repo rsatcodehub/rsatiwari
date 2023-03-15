@@ -14,7 +14,7 @@ I often need to setup ssh authentication to access repos (github/azure repos). T
 
 1. On your local machine (using bash prompt), run the below command to generate key. You can add a passphrase which improves or adds another layer of security.
 
-```ssh-keygen -C "youremail@email.com"```
+```ssh-keygen -t rsa -b 4096 -C "your_email@example.com"```
 
 This should generate two files id_rsa and id_rsa.pub. Remember to keep id_rsa safe and dont accidentially copy this in source code or any publicly accessible endpoint.
 

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
 <meta name="description" content="I often need to setup ssh authentication to access repos (github/azure repos). This is a quick post to keep all that information handy.
-On your local machine (using bash prompt), run the below command to generate key. You can add a passphrase which improves or adds another layer of security. ssh-keygen -C &amp;quot;youremail@email.com&amp;quot;
+On your local machine (using bash prompt), run the below command to generate key. You can add a passphrase which improves or adds another layer of security. ssh-keygen -t rsa -b 4096 -C &amp;quot;your_email@example.com&amp;quot;
 This should generate two files id_rsa and id_rsa.pub. Remember to keep id_rsa safe and dont accidentially copy this in source code or any publicly accessible endpoint." />
 <meta name="keywords" content=", azure repos, github, ssh keys" />
 <meta name="robots" content="noodp" />
@@ -42,24 +42,24 @@ This should generate two files id_rsa and id_rsa.pub. Remember to keep id_rsa sa
 
 <meta itemprop="name" content="Github, Azure Repos and SSH Authentication">
 <meta itemprop="description" content="I often need to setup ssh authentication to access repos (github/azure repos). This is a quick post to keep all that information handy.
-On your local machine (using bash prompt), run the below command to generate key. You can add a passphrase which improves or adds another layer of security. ssh-keygen -C &quot;youremail@email.com&quot;
+On your local machine (using bash prompt), run the below command to generate key. You can add a passphrase which improves or adds another layer of security. ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;
 This should generate two files id_rsa and id_rsa.pub. Remember to keep id_rsa safe and dont accidentially copy this in source code or any publicly accessible endpoint."><meta itemprop="datePublished" content="2023-01-10T07:00:21+11:00" />
 <meta itemprop="dateModified" content="2023-01-10T07:00:21+11:00" />
-<meta itemprop="wordCount" content="151"><meta itemprop="image" content="https://rsatcodehub.github.io/rsatiwari"/>
+<meta itemprop="wordCount" content="155"><meta itemprop="image" content="https://rsatcodehub.github.io/rsatiwari"/>
 <meta itemprop="keywords" content="azure repos,github,ssh keys," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://rsatcodehub.github.io/rsatiwari"/>
 
 <meta name="twitter:title" content="Github, Azure Repos and SSH Authentication"/>
 <meta name="twitter:description" content="I often need to setup ssh authentication to access repos (github/azure repos). This is a quick post to keep all that information handy.
-On your local machine (using bash prompt), run the below command to generate key. You can add a passphrase which improves or adds another layer of security. ssh-keygen -C &quot;youremail@email.com&quot;
+On your local machine (using bash prompt), run the below command to generate key. You can add a passphrase which improves or adds another layer of security. ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;
 This should generate two files id_rsa and id_rsa.pub. Remember to keep id_rsa safe and dont accidentially copy this in source code or any publicly accessible endpoint."/>
 
 
 
     <meta property="og:title" content="Github, Azure Repos and SSH Authentication" />
 <meta property="og:description" content="I often need to setup ssh authentication to access repos (github/azure repos). This is a quick post to keep all that information handy.
-On your local machine (using bash prompt), run the below command to generate key. You can add a passphrase which improves or adds another layer of security. ssh-keygen -C &quot;youremail@email.com&quot;
+On your local machine (using bash prompt), run the below command to generate key. You can add a passphrase which improves or adds another layer of security. ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;
 This should generate two files id_rsa and id_rsa.pub. Remember to keep id_rsa safe and dont accidentially copy this in source code or any publicly accessible endpoint." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://rsatcodehub.github.io/rsatiwari/posts/sourcecode-ssh/" /><meta property="og:image" content="https://rsatcodehub.github.io/rsatiwari"/><meta property="article:section" content="posts" />
@@ -158,7 +158,7 @@ This should generate two files id_rsa and id_rsa.pub. Remember to keep id_rsa sa
 <ol>
 <li>On your local machine (using bash prompt), run the below command to generate key. You can add a passphrase which improves or adds another layer of security.</li>
 </ol>
-<p><code>ssh-keygen -C &quot;youremail@email.com&quot;</code></p>
+<p><code>ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</code></p>
 <p>This should generate two files id_rsa and id_rsa.pub. Remember to keep id_rsa safe and dont accidentially copy this in source code or any publicly accessible endpoint.</p>
 <ol start="2">
 <li>On Github or Azure DevOps Repo add the contents of id_rsa.pub</li>
@@ -209,7 +209,7 @@ This should generate two files id_rsa and id_rsa.pub. Remember to keep id_rsa sa
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        151 Words
+        155 Words
       </p>
 
       <p>
