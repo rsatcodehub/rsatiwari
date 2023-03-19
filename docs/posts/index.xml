@@ -6,8 +6,76 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Thu, 23 Feb 2023 02:26:31 +1100</lastBuildDate>
+        <lastBuildDate>Fri, 10 Mar 2023 07:26:31 +1100</lastBuildDate>
         <atom:link href="https://rsatcodehub.github.io/rsatiwari/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ssh-pat-issues-ADO Repos</title>
+            <link>https://rsatcodehub.github.io/rsatiwari/posts/ssh-pat-ado-issues/</link>
+            <pubDate>Fri, 10 Mar 2023 07:26:31 +1100</pubDate>
+            
+            <guid>https://rsatcodehub.github.io/rsatiwari/posts/ssh-pat-ado-issues/</guid>
+            <description>I recently was working on a new machine (Windows) and had to setup all the software and configuration on it.
+It has been while and kept getting this issue when I installed or tried to follow ssh auth method for ADO repos.
+I went through some troubleshooting and one of the errors was as below.
+Issue:
+Solution:
+Open PowerShell as an administrator by right-clicking the start menu and selecting &amp;ldquo;Windows PowerShell (Admin)&amp;rdquo;.</description>
+            <content type="html"><![CDATA[<p>I recently was working on a new machine (Windows) and had to setup all the software and configuration on it.</p>
+<p>It has been while and kept getting this issue when I installed or tried to follow ssh auth method for ADO repos.</p>
+<p>I went through some troubleshooting and one of the errors was as below.</p>
+<p>Issue:</p>
+
+    <img src="../images/ssh-pat-ado-issues-01.PNG"  class="left"  />
+
+
+<p>Solution:</p>
+<ol>
+<li>
+<p>Open PowerShell as an administrator by right-clicking the start menu and selecting &ldquo;Windows PowerShell (Admin)&rdquo;.</p>
+</li>
+<li>
+<p>Generate SSH Key using the below command    <br>
+<code>ssh-keygen -t rsa -b 4096 -C &quot;your_email@domain.com&quot;</code></p>
+</li>
+<li>
+<p>Copy the public key file <code>Get-Content ~/.ssh/id_rsa.pub | clip</code></p>
+</li>
+<li>
+<p>On Azure DevOps account settings add SSH public keys under security</p>
+</li>
+<li>
+<p>Test SSH connection</p>
+<p><code>ssh -T git@ssh.dev.azure.com</code></p>
+</li>
+<li>
+<p>If it is successful, browse to Azure Repos and use SSH option to clone</p>
+</li>
+<li>
+<p>However, if this unsuccessful, you may see some shell access error. It is possible your coprorate/VPN network does not allow SSH (port 22)</p>
+<p>Use the https option to clone and use PAT.</p>
+<p>i. On ADO under your account, generate new PAT with desired permissions.</p>
+<p>ii. In my case, as mentioned in issue, I was having issues with ssh agent service. Turns out it was disabled.</p>
+<p>Service Status check &ndash;&gt;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-service ssh-agent
+</span></span></code></pre></div><p>Service start type check &ndash;&gt;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-Service ssh-agent | Select-Object StartType
+</span></span></code></pre></div><p>In my case, it was Disabled</p>
+<p>Change Service Start to Automatic &ndash;&gt;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Set-Service ssh-agent -StartupType Automatic
+</span></span></code></pre></div><p>iii. Now, add the ssh key and PAT</p>
+<p>list agent identities&ndash;&gt; cd ..ssh and <code>ssh-add -l</code></p>
+<p>add ssh key &ndash;&gt; ssh-add <code>.\id.rsa</code> THis should display as identity and your name/email address</p>
+<p>iv. Git Config -</p>
+<p><code>git config --global credential.helper &quot;store --file ~/.git-credentials&quot;</code></p>
+<p><code>git config --global user.name &quot;Name&quot;</code></p>
+<p><code>git config --global user.email &quot;youremail@domain.com&quot;</code></p>
+<p><code>git config --global credential.https://dev.azure.com.username PAT</code> Only update PAT the URL is correct</p>
+<p>Now, clone ADO Repo using https method, it would prompt or pop-up browser and next time it should work seamlessly.</p>
+</li>
+</ol>
+]]></content>
+        </item>
         
         <item>
             <title>ADO Agent Installation for Windows VM in a secure environment</title>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ADO Repos on rsatiwari-tech notes</title>
+    <link>https://rsatcodehub.github.io/rsatiwari/tags/ado-repos/</link>
+    <description>Recent content in ADO Repos on rsatiwari-tech notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 10 Mar 2023 07:26:31 +1100</lastBuildDate><atom:link href="https://rsatcodehub.github.io/rsatiwari/tags/ado-repos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ssh-pat-issues-ADO Repos</title>
+      <link>https://rsatcodehub.github.io/rsatiwari/posts/ssh-pat-ado-issues/</link>
+      <pubDate>Fri, 10 Mar 2023 07:26:31 +1100</pubDate>
+      
+      <guid>https://rsatcodehub.github.io/rsatiwari/posts/ssh-pat-ado-issues/</guid>
+      <description>I recently was working on a new machine (Windows) and had to setup all the software and configuration on it.
+It has been while and kept getting this issue when I installed or tried to follow ssh auth method for ADO repos.
+I went through some troubleshooting and one of the errors was as below.
+Issue:
+Solution:
+Open PowerShell as an administrator by right-clicking the start menu and selecting &amp;ldquo;Windows PowerShell (Admin)&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>
