@@ -67,5 +67,15 @@ On your local machine (using bash prompt), run the below command to generate key
 This should generate two files id_rsa and id_rsa.pub. Remember to keep id_rsa safe and dont accidentially copy this in source code or any publicly accessible endpoint.</description>
     </item>
     
+    <item>
+      <title>LoadBalance a service using Netscaler</title>
+      <link>https://rsatcodehub.github.io/rsatiwari/posts/services-netscaler/</link>
+      <pubDate>Thu, 10 Mar 2022 07:26:31 +1100</pubDate>
+      
+      <guid>https://rsatcodehub.github.io/rsatiwari/posts/services-netscaler/</guid>
+      <description>I am no expert in Netscaler. However, I have been in situations where I had to figure out and place few services behind Netscaler. Since it was Non-production environment, I thought I might as well try and learn. Here is my version of steps that needs to be performed.
+Scenario: You have a external and internal service and you need to secure the external service using SSL and place both services behind Netscaler.</description>
+    </item>
+    
   </channel>
 </rss>

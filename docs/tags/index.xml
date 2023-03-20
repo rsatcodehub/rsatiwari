@@ -89,5 +89,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>LoadBalancer</title>
+      <link>https://rsatcodehub.github.io/rsatiwari/tags/loadbalancer/</link>
+      <pubDate>Thu, 10 Mar 2022 07:26:31 +1100</pubDate>
+      
+      <guid>https://rsatcodehub.github.io/rsatiwari/tags/loadbalancer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Netscaler</title>
+      <link>https://rsatcodehub.github.io/rsatiwari/tags/netscaler/</link>
+      <pubDate>Thu, 10 Mar 2022 07:26:31 +1100</pubDate>
+      
+      <guid>https://rsatcodehub.github.io/rsatiwari/tags/netscaler/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
