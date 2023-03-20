@@ -72,13 +72,13 @@ Solution:
         
     iv. Git Config -
 
-    ```git config --global credential.helper "store --file ~/.git-credentials"```
+    *```git config --global credential.helper "store --file ~/.git-credentials"```*
 
-    ```git config --global user.name "Name"```
+    *```git config --global user.name "Name"```*
 
-    ```git config --global user.email "youremail@domain.com"```
+    *```git config --global user.email "youremail@domain.com"```*
 
-    ```git config --global credential.https://dev.azure.com.username PAT``` Only update PAT the URL is correct
+    *```git config --global credential.https://dev.azure.com.username PAT```* Only update PAT the URL is correct
 
     Now, clone ADO Repo using https method, it would prompt or pop-up browser and next time it should work seamlessly.
  
