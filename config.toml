@@ -1,4 +1,5 @@
-baseurl      = "https://rsatcodehub.github.io/rsatiwari"
+#baseurl      = "https://rsatcodehub.github.io/rsatiwari"
+baseurl      = "https://rsatiwari.com"
 title        = "rsatiwari-tech notes"
 languageCode = "en-us"
 theme        = "hello-friend-ng"

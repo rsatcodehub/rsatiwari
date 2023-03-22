@@ -2,108 +2,108 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on rsatiwari-tech notes</title>
-    <link>https://rsatcodehub.github.io/rsatiwari/tags/</link>
+    <link>https://rsatiwari.com/tags/</link>
     <description>Recent content in Tags on rsatiwari-tech notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 10 Mar 2023 07:26:31 +1100</lastBuildDate><atom:link href="https://rsatcodehub.github.io/rsatiwari/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Mar 2023 07:26:31 +1100</lastBuildDate><atom:link href="https://rsatiwari.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ADO Repos</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/tags/ado-repos/</link>
+      <link>https://rsatiwari.com/tags/ado-repos/</link>
       <pubDate>Fri, 10 Mar 2023 07:26:31 +1100</pubDate>
       
-      <guid>https://rsatcodehub.github.io/rsatiwari/tags/ado-repos/</guid>
+      <guid>https://rsatiwari.com/tags/ado-repos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Authentication</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/tags/authentication/</link>
+      <link>https://rsatiwari.com/tags/authentication/</link>
       <pubDate>Fri, 10 Mar 2023 07:26:31 +1100</pubDate>
       
-      <guid>https://rsatcodehub.github.io/rsatiwari/tags/authentication/</guid>
+      <guid>https://rsatiwari.com/tags/authentication/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ado</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/tags/ado/</link>
+      <link>https://rsatiwari.com/tags/ado/</link>
       <pubDate>Thu, 23 Feb 2023 02:26:31 +1100</pubDate>
       
-      <guid>https://rsatcodehub.github.io/rsatiwari/tags/ado/</guid>
+      <guid>https://rsatiwari.com/tags/ado/</guid>
       <description></description>
     </item>
     
     <item>
       <title>office365</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/tags/office365/</link>
+      <link>https://rsatiwari.com/tags/office365/</link>
       <pubDate>Fri, 10 Feb 2023 07:26:31 +1100</pubDate>
       
-      <guid>https://rsatcodehub.github.io/rsatiwari/tags/office365/</guid>
+      <guid>https://rsatiwari.com/tags/office365/</guid>
       <description></description>
     </item>
     
     <item>
       <title>powershell</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/tags/powershell/</link>
+      <link>https://rsatiwari.com/tags/powershell/</link>
       <pubDate>Fri, 10 Feb 2023 07:26:31 +1100</pubDate>
       
-      <guid>https://rsatcodehub.github.io/rsatiwari/tags/powershell/</guid>
+      <guid>https://rsatiwari.com/tags/powershell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>azcli</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/tags/azcli/</link>
+      <link>https://rsatiwari.com/tags/azcli/</link>
       <pubDate>Wed, 01 Feb 2023 07:26:31 +1100</pubDate>
       
-      <guid>https://rsatcodehub.github.io/rsatiwari/tags/azcli/</guid>
+      <guid>https://rsatiwari.com/tags/azcli/</guid>
       <description></description>
     </item>
     
     <item>
       <title>azure repos</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/tags/azure-repos/</link>
+      <link>https://rsatiwari.com/tags/azure-repos/</link>
       <pubDate>Tue, 10 Jan 2023 07:00:21 +1100</pubDate>
       
-      <guid>https://rsatcodehub.github.io/rsatiwari/tags/azure-repos/</guid>
+      <guid>https://rsatiwari.com/tags/azure-repos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>github</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/tags/github/</link>
+      <link>https://rsatiwari.com/tags/github/</link>
       <pubDate>Tue, 10 Jan 2023 07:00:21 +1100</pubDate>
       
-      <guid>https://rsatcodehub.github.io/rsatiwari/tags/github/</guid>
+      <guid>https://rsatiwari.com/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ssh keys</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/tags/ssh-keys/</link>
+      <link>https://rsatiwari.com/tags/ssh-keys/</link>
       <pubDate>Tue, 10 Jan 2023 07:00:21 +1100</pubDate>
       
-      <guid>https://rsatcodehub.github.io/rsatiwari/tags/ssh-keys/</guid>
+      <guid>https://rsatiwari.com/tags/ssh-keys/</guid>
       <description></description>
     </item>
     
     <item>
       <title>LoadBalancer</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/tags/loadbalancer/</link>
+      <link>https://rsatiwari.com/tags/loadbalancer/</link>
       <pubDate>Thu, 10 Mar 2022 07:26:31 +1100</pubDate>
       
-      <guid>https://rsatcodehub.github.io/rsatiwari/tags/loadbalancer/</guid>
+      <guid>https://rsatiwari.com/tags/loadbalancer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Netscaler</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/tags/netscaler/</link>
+      <link>https://rsatiwari.com/tags/netscaler/</link>
       <pubDate>Thu, 10 Mar 2022 07:26:31 +1100</pubDate>
       
-      <guid>https://rsatcodehub.github.io/rsatiwari/tags/netscaler/</guid>
+      <guid>https://rsatiwari.com/tags/netscaler/</guid>
       <description></description>
     </item>
     

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>azcli on rsatiwari-tech notes</title>
-    <link>https://rsatcodehub.github.io/rsatiwari/tags/azcli/</link>
+    <link>https://rsatiwari.com/tags/azcli/</link>
     <description>Recent content in azcli on rsatiwari-tech notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 01 Feb 2023 07:26:31 +1100</lastBuildDate><atom:link href="https://rsatcodehub.github.io/rsatiwari/tags/azcli/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Feb 2023 07:26:31 +1100</lastBuildDate><atom:link href="https://rsatiwari.com/tags/azcli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ADO CLI and Variables List</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/posts/ado-cli-exportvariables/</link>
+      <link>https://rsatiwari.com/posts/ado-cli-exportvariables/</link>
       <pubDate>Wed, 01 Feb 2023 07:26:31 +1100</pubDate>
       
-      <guid>https://rsatcodehub.github.io/rsatiwari/posts/ado-cli-exportvariables/</guid>
+      <guid>https://rsatiwari.com/posts/ado-cli-exportvariables/</guid>
       <description>Scenario:
 I wanted to export a long list of variables defined in release pipeline in Azure DevOps. This was on classic GUI based pipeline. I wanted to understand the values it was populated. If you have similar challenge, the below solution may help you.
 One Possible Solution:

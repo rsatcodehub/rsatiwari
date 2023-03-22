@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rsatiwari-tech notes</title>
-    <link>https://rsatcodehub.github.io/rsatiwari/</link>
+    <link>https://rsatiwari.com/</link>
     <description>Recent content on rsatiwari-tech notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 10 Mar 2023 07:26:31 +1100</lastBuildDate><atom:link href="https://rsatcodehub.github.io/rsatiwari/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Mar 2023 07:26:31 +1100</lastBuildDate><atom:link href="https://rsatiwari.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ssh-pat-issues-ADO Repos</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/posts/ssh-pat-ado-issues/</link>
+      <link>https://rsatiwari.com/posts/ssh-pat-ado-issues/</link>
       <pubDate>Fri, 10 Mar 2023 07:26:31 +1100</pubDate>
       
-      <guid>https://rsatcodehub.github.io/rsatiwari/posts/ssh-pat-ado-issues/</guid>
+      <guid>https://rsatiwari.com/posts/ssh-pat-ado-issues/</guid>
       <description>I recently was working on a new machine (Windows) and had to setup all the software and configuration on it.
 It has been while and kept getting this issue when I installed or tried to follow ssh auth method for ADO repos.
 I went through some troubleshooting and one of the errors was as below.
@@ -24,10 +24,10 @@ Open PowerShell as an administrator by right-clicking the start menu and selecti
     
     <item>
       <title>ADO Agent Installation for Windows VM in a secure environment</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/posts/ado-windowsagent/</link>
+      <link>https://rsatiwari.com/posts/ado-windowsagent/</link>
       <pubDate>Thu, 23 Feb 2023 02:26:31 +1100</pubDate>
       
-      <guid>https://rsatcodehub.github.io/rsatiwari/posts/ado-windowsagent/</guid>
+      <guid>https://rsatiwari.com/posts/ado-windowsagent/</guid>
       <description>Scenario: You need to register a Windows Virtual machines as a deployment target in Azure DevOps Project. Also, the VMs are placed in a secure zone where files cannot be downloaded directly due to firewall restrictions. Hence, you cannot use the ADO default registration script to download the vsts agent and register it.
 Steps to configure it -
 Azure DevOps - Create a new Deployment Group eg. DG-External This is where the VMs will be registered.</description>
@@ -35,10 +35,10 @@ Azure DevOps - Create a new Deployment Group eg. DG-External This is where the V
     
     <item>
       <title>Office365-Powershell</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/posts/azcmd1/</link>
+      <link>https://rsatiwari.com/posts/azcmd1/</link>
       <pubDate>Fri, 10 Feb 2023 07:26:31 +1100</pubDate>
       
-      <guid>https://rsatcodehub.github.io/rsatiwari/posts/azcmd1/</guid>
+      <guid>https://rsatiwari.com/posts/azcmd1/</guid>
       <description>Although, I dont work much on AAD or IDAM side, there are times when I quickly need to refer to some details in Office365. Mainly due to someone is after this info, side effects of having GOD mode access&amp;hellip;.
 End result I would like to run Get-MsolAccountSku i. Install MSOnline module on Windows Powershell, Install-Module MSOnline
 ii. Connecto MSolService Connect-MsolService this would prompt for username and password. So if you work in Azure PIM environment, elevate your access first before running this cmdlet.</description>
@@ -46,10 +46,10 @@ ii. Connecto MSolService Connect-MsolService this would prompt for username and 
     
     <item>
       <title>ADO CLI and Variables List</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/posts/ado-cli-exportvariables/</link>
+      <link>https://rsatiwari.com/posts/ado-cli-exportvariables/</link>
       <pubDate>Wed, 01 Feb 2023 07:26:31 +1100</pubDate>
       
-      <guid>https://rsatcodehub.github.io/rsatiwari/posts/ado-cli-exportvariables/</guid>
+      <guid>https://rsatiwari.com/posts/ado-cli-exportvariables/</guid>
       <description>Scenario:
 I wanted to export a long list of variables defined in release pipeline in Azure DevOps. This was on classic GUI based pipeline. I wanted to understand the values it was populated. If you have similar challenge, the below solution may help you.
 One Possible Solution:
@@ -58,10 +58,10 @@ I am sure there may be another way to work through this solution. The way I got 
     
     <item>
       <title>Github, Azure Repos and SSH Authentication</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/posts/sourcecode-ssh/</link>
+      <link>https://rsatiwari.com/posts/sourcecode-ssh/</link>
       <pubDate>Tue, 10 Jan 2023 07:00:21 +1100</pubDate>
       
-      <guid>https://rsatcodehub.github.io/rsatiwari/posts/sourcecode-ssh/</guid>
+      <guid>https://rsatiwari.com/posts/sourcecode-ssh/</guid>
       <description>I often need to setup ssh authentication to access repos (github/azure repos). This is a quick post to keep all that information handy.
 On your local machine (using bash prompt), run the below command to generate key. You can add a passphrase which improves or adds another layer of security. ssh-keygen -t rsa -b 4096 -C &amp;quot;your_email@example.com&amp;quot;
 This should generate two files id_rsa and id_rsa.pub. Remember to keep id_rsa safe and dont accidentially copy this in source code or any publicly accessible endpoint.</description>
@@ -69,10 +69,10 @@ This should generate two files id_rsa and id_rsa.pub. Remember to keep id_rsa sa
     
     <item>
       <title>LoadBalance a service using Netscaler</title>
-      <link>https://rsatcodehub.github.io/rsatiwari/posts/services-netscaler/</link>
+      <link>https://rsatiwari.com/posts/services-netscaler/</link>
       <pubDate>Thu, 10 Mar 2022 07:26:31 +1100</pubDate>
       
-      <guid>https://rsatcodehub.github.io/rsatiwari/posts/services-netscaler/</guid>
+      <guid>https://rsatiwari.com/posts/services-netscaler/</guid>
       <description>I am no expert in Netscaler. However, I have been in situations where I had to figure out and place few services behind Netscaler. Since it was Non-production environment, I thought I might as well try and learn. Here is my version of steps that needs to be performed.
 Scenario: You have a external and internal service and you need to secure the external service using SSL and place both services behind Netscaler.</description>
     </item>
