@@ -1,6 +1,6 @@
 ---
 title: "Terraform-quick-notes"
-date: 2023-01-10T07:26:31+11:00
+date: 2023-01-11T07:26:31+11:00
 draft: false
 toc: false
 images:
@@ -9,7 +9,7 @@ tags:
   
 ---
 
-It has been a while since I used Terraform, recently I wanted to refresh my memory and skills.
+It has been a while since I used Terraform, recently I wanted to refresh my memory.
 
 So, I started creating some basic infra in Azure and ADO pipelines.
 
@@ -45,19 +45,19 @@ Also, to use Azure Storage for TF state file.
 
 1. Structure folder something like
 
-   TF
+   Root folder -->TF/Terraform and Subfolders
     - AKS
     - LogAnalyticsWorkSpace
     - VirtualNetwork
   
   Also, a pre-requisite would be creating a resource group, storage account and container to hold state file.
 
-2. Run in the following sequence 
+2. Run TF in the following sequence. Change Directory to each subfolder and *```terraform apply```* 
      - VirtualNetwork
      - LogAnalyticsWorkSpace
      - AKS
 
-An important thing to note - Create a separate folders for the above with .gitignore (terraform) for all and ensure state filename are all unique eg. virtualnetwork - vnettfstate, aks - akstfstate, otherwise the previous step will teardown your environment.
+An important thing to note - Create separate folders for the above with .gitignore (terraform) for all and ensure state filename are all unique eg. virtualnetwork - vnettfstate, aks - akstfstate, otherwise the previous step will teardown your environment.
 
 Also, this might be handy to check currently supported AKS cluster version ```az aks get-versions --location australiaeast -o table```
 

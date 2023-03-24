@@ -59,16 +59,16 @@ I am sure there may be another way to work through this solution. The way I got 
     <item>
       <title>Terraform-quick-notes</title>
       <link>https://rsatiwari.com/posts/terraform-quick-notes/</link>
-      <pubDate>Tue, 10 Jan 2023 07:26:31 +1100</pubDate>
+      <pubDate>Wed, 11 Jan 2023 07:26:31 +1100</pubDate>
       
       <guid>https://rsatiwari.com/posts/terraform-quick-notes/</guid>
-      <description>It has been a while since I used Terraform, recently I wanted to refresh my memory and skills.
+      <description>It has been a while since I used Terraform, recently I wanted to refresh my memory.
 So, I started creating some basic infra in Azure and ADO pipelines.
 This is for a quick reference -
 One way to structure TF files, you can also add providers etc in a separate file. Remember to add .gitignore for TF files
 Commands to create Infra using TF
 terraform init
-terraform plan --var-file=filename.</description>
+terraform plan --var-file=filename.tfvars &amp;ndash;var-file is optional and depends on your folder structure</description>
     </item>
     
     <item>

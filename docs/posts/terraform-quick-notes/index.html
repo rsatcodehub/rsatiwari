@@ -5,13 +5,13 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="It has been a while since I used Terraform, recently I wanted to refresh my memory and skills.
+<meta name="description" content="It has been a while since I used Terraform, recently I wanted to refresh my memory.
 So, I started creating some basic infra in Azure and ADO pipelines.
 This is for a quick reference -
 One way to structure TF files, you can also add providers etc in a separate file. Remember to add .gitignore for TF files
 Commands to create Infra using TF
 terraform init
-terraform plan --var-file=filename." />
+terraform plan --var-file=filename.tfvars &amp;ndash;var-file is optional and depends on your folder structure" />
 <meta name="keywords" content=", Terraform" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -45,49 +45,49 @@ terraform plan --var-file=filename." />
 
 
 <meta itemprop="name" content="Terraform-quick-notes">
-<meta itemprop="description" content="It has been a while since I used Terraform, recently I wanted to refresh my memory and skills.
+<meta itemprop="description" content="It has been a while since I used Terraform, recently I wanted to refresh my memory.
 So, I started creating some basic infra in Azure and ADO pipelines.
 This is for a quick reference -
 One way to structure TF files, you can also add providers etc in a separate file. Remember to add .gitignore for TF files
 Commands to create Infra using TF
 terraform init
-terraform plan --var-file=filename."><meta itemprop="datePublished" content="2023-01-10T07:26:31+11:00" />
-<meta itemprop="dateModified" content="2023-01-10T07:26:31+11:00" />
-<meta itemprop="wordCount" content="254"><meta itemprop="image" content="https://rsatiwari.com"/>
+terraform plan --var-file=filename.tfvars &ndash;var-file is optional and depends on your folder structure"><meta itemprop="datePublished" content="2023-01-11T07:26:31+11:00" />
+<meta itemprop="dateModified" content="2023-01-11T07:26:31+11:00" />
+<meta itemprop="wordCount" content="264"><meta itemprop="image" content="https://rsatiwari.com"/>
 <meta itemprop="keywords" content="Terraform," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://rsatiwari.com"/>
 
 <meta name="twitter:title" content="Terraform-quick-notes"/>
-<meta name="twitter:description" content="It has been a while since I used Terraform, recently I wanted to refresh my memory and skills.
+<meta name="twitter:description" content="It has been a while since I used Terraform, recently I wanted to refresh my memory.
 So, I started creating some basic infra in Azure and ADO pipelines.
 This is for a quick reference -
 One way to structure TF files, you can also add providers etc in a separate file. Remember to add .gitignore for TF files
 Commands to create Infra using TF
 terraform init
-terraform plan --var-file=filename."/>
+terraform plan --var-file=filename.tfvars &ndash;var-file is optional and depends on your folder structure"/>
 
 
 
     <meta property="og:title" content="Terraform-quick-notes" />
-<meta property="og:description" content="It has been a while since I used Terraform, recently I wanted to refresh my memory and skills.
+<meta property="og:description" content="It has been a while since I used Terraform, recently I wanted to refresh my memory.
 So, I started creating some basic infra in Azure and ADO pipelines.
 This is for a quick reference -
 One way to structure TF files, you can also add providers etc in a separate file. Remember to add .gitignore for TF files
 Commands to create Infra using TF
 terraform init
-terraform plan --var-file=filename." />
+terraform plan --var-file=filename.tfvars &ndash;var-file is optional and depends on your folder structure" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://rsatiwari.com/posts/terraform-quick-notes/" /><meta property="og:image" content="https://rsatiwari.com"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-01-10T07:26:31+11:00" />
-<meta property="article:modified_time" content="2023-01-10T07:26:31+11:00" /><meta property="og:site_name" content="rsatiwari-tech notes" />
+<meta property="article:published_time" content="2023-01-11T07:26:31+11:00" />
+<meta property="article:modified_time" content="2023-01-11T07:26:31+11:00" /><meta property="og:site_name" content="rsatiwari-tech notes" />
 
 
 
 
 
 
-    <meta property="article:published_time" content="2023-01-10 07:26:31 &#43;1100 AEDT" />
+    <meta property="article:published_time" content="2023-01-11 07:26:31 &#43;1100 AEDT" />
 
 
 
@@ -170,7 +170,7 @@ terraform plan --var-file=filename." />
       
 
       <div class="post-content">
-        <p>It has been a while since I used Terraform, recently I wanted to refresh my memory and skills.</p>
+        <p>It has been a while since I used Terraform, recently I wanted to refresh my memory.</p>
 <p>So, I started creating some basic infra in Azure and ADO pipelines.</p>
 <p>This is for a quick reference -</p>
 <ol>
@@ -202,7 +202,7 @@ terraform plan --var-file=filename." />
 <ol>
 <li>
 <p>Structure folder something like</p>
-<p>TF</p>
+<p>Root folder &ndash;&gt;TF/Terraform and Subfolders</p>
 <ul>
 <li>AKS</li>
 <li>LogAnalyticsWorkSpace</li>
@@ -212,7 +212,7 @@ terraform plan --var-file=filename." />
 </ol>
 <p>Also, a pre-requisite would be creating a resource group, storage account and container to hold state file.</p>
 <ol start="2">
-<li>Run in the following sequence
+<li>Run TF in the following sequence. Change Directory to each subfolder and <em><code>terraform apply</code></em>
 <ul>
 <li>VirtualNetwork</li>
 <li>LogAnalyticsWorkSpace</li>
@@ -220,7 +220,7 @@ terraform plan --var-file=filename." />
 </ul>
 </li>
 </ol>
-<p>An important thing to note - Create a separate folders for the above with .gitignore (terraform) for all and ensure state filename are all unique eg. virtualnetwork - vnettfstate, aks - akstfstate, otherwise the previous step will teardown your environment.</p>
+<p>An important thing to note - Create separate folders for the above with .gitignore (terraform) for all and ensure state filename are all unique eg. virtualnetwork - vnettfstate, aks - akstfstate, otherwise the previous step will teardown your environment.</p>
 <p>Also, this might be handy to check currently supported AKS cluster version <code>az aks get-versions --location australiaeast -o table</code></p>
 
       </div>
@@ -247,7 +247,7 @@ terraform plan --var-file=filename." />
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        254 Words
+        264 Words
       </p>
 
       <p>
@@ -258,7 +258,7 @@ terraform plan --var-file=filename." />
           <line x1="3" y1="10" x2="21" y2="10"></line>
         </svg>
         
-          2023-01-10 07:26
+          2023-01-11 07:26
         
 
          

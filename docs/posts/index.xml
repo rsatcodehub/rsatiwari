@@ -194,17 +194,17 @@ I am sure there may be another way to work through this solution. The way I got 
         <item>
             <title>Terraform-quick-notes</title>
             <link>https://rsatiwari.com/posts/terraform-quick-notes/</link>
-            <pubDate>Tue, 10 Jan 2023 07:26:31 +1100</pubDate>
+            <pubDate>Wed, 11 Jan 2023 07:26:31 +1100</pubDate>
             
             <guid>https://rsatiwari.com/posts/terraform-quick-notes/</guid>
-            <description>It has been a while since I used Terraform, recently I wanted to refresh my memory and skills.
+            <description>It has been a while since I used Terraform, recently I wanted to refresh my memory.
 So, I started creating some basic infra in Azure and ADO pipelines.
 This is for a quick reference -
 One way to structure TF files, you can also add providers etc in a separate file. Remember to add .gitignore for TF files
 Commands to create Infra using TF
 terraform init
-terraform plan --var-file=filename.</description>
-            <content type="html"><![CDATA[<p>It has been a while since I used Terraform, recently I wanted to refresh my memory and skills.</p>
+terraform plan --var-file=filename.tfvars &amp;ndash;var-file is optional and depends on your folder structure</description>
+            <content type="html"><![CDATA[<p>It has been a while since I used Terraform, recently I wanted to refresh my memory.</p>
 <p>So, I started creating some basic infra in Azure and ADO pipelines.</p>
 <p>This is for a quick reference -</p>
 <ol>
@@ -236,7 +236,7 @@ terraform plan --var-file=filename.</description>
 <ol>
 <li>
 <p>Structure folder something like</p>
-<p>TF</p>
+<p>Root folder &ndash;&gt;TF/Terraform and Subfolders</p>
 <ul>
 <li>AKS</li>
 <li>LogAnalyticsWorkSpace</li>
@@ -246,7 +246,7 @@ terraform plan --var-file=filename.</description>
 </ol>
 <p>Also, a pre-requisite would be creating a resource group, storage account and container to hold state file.</p>
 <ol start="2">
-<li>Run in the following sequence
+<li>Run TF in the following sequence. Change Directory to each subfolder and <em><code>terraform apply</code></em>
 <ul>
 <li>VirtualNetwork</li>
 <li>LogAnalyticsWorkSpace</li>
@@ -254,7 +254,7 @@ terraform plan --var-file=filename.</description>
 </ul>
 </li>
 </ol>
-<p>An important thing to note - Create a separate folders for the above with .gitignore (terraform) for all and ensure state filename are all unique eg. virtualnetwork - vnettfstate, aks - akstfstate, otherwise the previous step will teardown your environment.</p>
+<p>An important thing to note - Create separate folders for the above with .gitignore (terraform) for all and ensure state filename are all unique eg. virtualnetwork - vnettfstate, aks - akstfstate, otherwise the previous step will teardown your environment.</p>
 <p>Also, this might be handy to check currently supported AKS cluster version <code>az aks get-versions --location australiaeast -o table</code></p>
 ]]></content>
         </item>
