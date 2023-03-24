@@ -192,6 +192,74 @@ I am sure there may be another way to work through this solution. The way I got 
         </item>
         
         <item>
+            <title>Terraform-quick-notes</title>
+            <link>https://rsatiwari.com/posts/terraform-quick-notes/</link>
+            <pubDate>Tue, 10 Jan 2023 07:26:31 +1100</pubDate>
+            
+            <guid>https://rsatiwari.com/posts/terraform-quick-notes/</guid>
+            <description>It has been a while since I used Terraform, recently I wanted to refresh my memory and skills.
+So, I started creating some basic infra in Azure and ADO pipelines.
+This is for a quick reference -
+One way to structure TF files, you can also add providers etc in a separate file. Remember to add .gitignore for TF files
+Commands to create Infra using TF
+terraform init
+terraform plan --var-file=filename.</description>
+            <content type="html"><![CDATA[<p>It has been a while since I used Terraform, recently I wanted to refresh my memory and skills.</p>
+<p>So, I started creating some basic infra in Azure and ADO pipelines.</p>
+<p>This is for a quick reference -</p>
+<ol>
+<li>One way to structure TF files, you can also add providers etc in a separate file.</li>
+</ol>
+
+    <img src="../images/Terraform-quick-notes-01.PNG"  class="left"  />
+
+
+<ol start="2">
+<li>
+<p>Remember to add .gitignore for TF files</p>
+</li>
+<li>
+<p>Commands to create Infra using TF</p>
+</li>
+</ol>
+<p><code>terraform init</code></p>
+<p><code>terraform plan --var-file=filename.tfvars</code> &ndash;var-file is optional and depends on your folder structure</p>
+<p><code>terraform apply --var-file=filename.tfvars</code></p>
+<p>If you are just starting out and see lot of errors in previous runs, my troubleshooting is to get rid of terraform files and do init and try again. Ofcourse, this is lab so take caution for Production environment.</p>
+<h3 id="my-usecase">My usecase:</h3>
+<p>To create AKS cluster. To create AKS you would first need to create the following -
+- Virtual Network
+- Log Analytics (Optional)
+- AKS Cluster</p>
+<p>Also, to use Azure Storage for TF state file.</p>
+<h4 id="my-learnings--">My learnings -</h4>
+<ol>
+<li>
+<p>Structure folder something like</p>
+<p>TF</p>
+<ul>
+<li>AKS</li>
+<li>LogAnalyticsWorkSpace</li>
+<li>VirtualNetwork</li>
+</ul>
+</li>
+</ol>
+<p>Also, a pre-requisite would be creating a resource group, storage account and container to hold state file.</p>
+<ol start="2">
+<li>Run in the following sequence
+<ul>
+<li>VirtualNetwork</li>
+<li>LogAnalyticsWorkSpace</li>
+<li>AKS</li>
+</ul>
+</li>
+</ol>
+<p>An important thing to note - Create a separate folders for the above with .gitignore (terraform) for all and ensure state filename are all unique eg. virtualnetwork - vnettfstate, aks - akstfstate, otherwise the previous step will teardown your environment.</p>
+<p>Also, this might be handy to check currently supported AKS cluster version <code>az aks get-versions --location australiaeast -o table</code></p>
+]]></content>
+        </item>
+        
+        <item>
             <title>Github, Azure Repos and SSH Authentication</title>
             <link>https://rsatiwari.com/posts/sourcecode-ssh/</link>
             <pubDate>Tue, 10 Jan 2023 07:00:21 +1100</pubDate>
